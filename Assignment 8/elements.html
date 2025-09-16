@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements Showcase</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 2px black solid;
+        }
+    </style>
+</head>
+
+<body>
+    <hr>
+    <h1 id="top">HTML Elements Showcase – Inline vs Block</h1>
+
+    <p>
+        Introduction:
+        In HTML, elements are broadly divided into
+        two categories: block-level and inline.
+        Block elements take up the full width, while
+        inline elements only take as much space as needed.
+    </p>
+    <p>
+        <a href="#block">Block-level Elements</a> |
+        <a href="#inline">Inline Elements</a> |
+        <a href="#comparison">Comparison Table</a>
+    </p>
+    <hr>
+    <section id="block">
+        <h2>Block Elements</h2>
+
+        <p>
+        <h3>Paragraph</h3>
+        Example:
+        <p>This is a paragraph</p>
+        Explanation: The &lt;p&gt; tag defines a block of textthat always starts on a new line.
+        </p>
+
+        <br>
+
+        <p>
+        <h3>Heading</h3>
+        Example:
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <h6>h6</h6>
+        Explanation: Headings are block-level elementsthat take the full width.
+        </p>
+
+        <br>
+
+        <p>
+        <h3>Blockquote</h3>
+        Example: <blockquote>
+            "Coding is the new literacy."
+        </blockquote>
+        Explanation: Blockquote is a block container for quotations.
+        </p>
+
+        <br>
+
+        <p>
+        <h3>HR</h3>
+        Example:
+        <hr>
+        Explanation: hr is a block container for making a horizontal line.
+        </p>
+
+        <br>
+
+        <p>
+        <h3>Table</h3>
+        Example: <table style="border-collapse: collapse;">
+            <tr>
+                <th style="border: 2px black solid;">Roll No.</th>
+                <th style="border: 2px black solid;">Name</th>
+            </tr>
+            <tr>
+                <td style="border: 2px black solid;">1</td>
+                <td style="border: 2px black solid;">ABC</td>
+            </tr>
+        </table>
+        Explanation: table is a block container for making a table.
+        </p>
+
+        <br>
+
+        <p>
+            <h3>List</h3>
+            Example:
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ul>
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ol>
+            Explanation: ul and li (list) is a block container for making a list.
+        </p>
+
+        <br>
+
+        <p>
+            <h3>Form</h3>
+            Example:
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+            </form>
+            Explanation: form is a block container for making a form.
+        </p>
+
+        <br>
+
+        <p>
+            <h3>div</h3>
+            Example:
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo cupiditate consectetur commodi est sit obcaecati quisquam tempora veritatis nihil suscipit, ab harum mollitia nostrum veniam provident facere hic amet iusto.</p>
+            </div>
+            Explanation: div is a block container for making a Generic container for grouping content.
+        </p>
+
+        <br>
+
+        <p>
+            <h3>header</h3>
+            Example:
+            <header>
+                Welcome
+            </header>
+            Explanation: header is a block container for representing a page or section header.
+        </p>
+
+        <br>
+
+        <p>
+            <h3>footer</h3>
+            Example:
+            <header>
+                Thank You
+            </header>
+            Explanation: footer is a block container for representing a page or section footer.
+        </p>
+    </section>
+    <hr>
+    <section id="inline">
+        <h2>Inline Elements</h2>
+
+        <p>
+            <h3>Span</h3>
+            Example:
+            <p>This is a <span style="color:blue;">blue inline span</span> inside a sentence.</p>
+            Explanation: The &lt;span&gt; tag is an inline container used to style part of a text without breaking the flow.
+        </p>
+
+        <br>
+
+        <p>
+            <h3>Anchor</h3>
+            Example:
+            <p>Visit <a href="https://example.com">Example</a> for more info.</p>
+            Explanation: The &lt;a&gt; tag is an inline element for hyperlinks.
+        </p>
+
+        <br>
+
+        <p>
+            <h3>Strong</h3>
+            Example:
+            <p>This is <strong>important</strong> text.</p>
+            Explanation: &lt;strong&gt; is an inline element used to give strong importance (bold by default).
+        </p>
+
+        <br>
+
+        <p>
+            <h3>Em</h3>
+            Example:
+            <p>This is <em>emphasized</em> text.</p>
+            Explanation: &lt;em&gt; is an inline element used for emphasis (italic by default).
+        </p>
+
+        <br>
+
+        <p>
+            <h3>Code</h3>
+            Example:
+            <p>Use <code>printf()</code> to print in C.</p>
+            Explanation: The &lt;code&gt; tag is inline, used for representing code snippets.
+        </p>
+
+        <br>
+
+        <p>
+            <h3>Image</h3>
+            Example:
+            <p>Here’s an inline image: <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ718nztPNJfCbDJjZG8fOkejBnBAeQw5eAUA&s" alt="Image"></p>
+            Explanation: The &lt;img&gt; tag is inline and does not start on a new line.
+        </p>
+
+        <br>
+
+        <p>
+            <h3>Input</h3>
+            Example:
+            <p>Enter name: <input type="text" placeholder="Your name"></p>
+            Explanation: &lt;input&gt; is an inline form control element.
+        </p>
+
+        <br>
+
+        <p>
+            <h3>Label</h3>
+            Example:
+            <p><label for="email">Email:</label> <input type="email" id="email"></p>
+            Explanation: &lt;label&gt; is inline and is used to define labels for form inputs.
+        </p>
+
+        <br>
+
+        <p>
+            <h3>Small</h3>
+            Example:
+            <p>This is <small>small text</small> in a sentence.</p>
+            Explanation: &lt;small&gt; is an inline element for side comments or fine print.
+        </p>
+
+        <br>
+
+        <p>
+            <h3>Abbr</h3>
+            Example:
+            <p><abbr title="World Health Organization">WHO</abbr> is an abbreviation.</p>
+            Explanation: &lt;abbr&gt; is inline and provides the full form of abbreviations.
+        </p>
+    </section>
+    <hr>
+    <section id="comparison"></section>
+    <table>
+        <caption>Comparison Table</caption>
+        <tr>
+            <th>Block Elements</th>
+            <th>Inline Elements</th>
+        </tr>
+        <tr>
+            <td>&lt;div&gt;</td>
+            <td>&lt;span&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;p&gt;</td>
+            <td>&lt;a&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;h1&gt;</td>
+            <td>&lt;b&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;ul&gt;</td>
+            <td>&lt;i&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;blockquote&gt;</td>
+            <td>&lt;abbr&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;table&gt;</td>
+            <td>&lt;code&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;hr&gt;</td>
+            <td>&lt;sup&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;section&gt;</td>
+            <td>&lt;mark&gt;</td>
+        </tr>
+    </table>
+
+    <hr>
+    <a href="#top">Back to Top</a>
+    <hr>
+</body>
+
+</html>

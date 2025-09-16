@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <hr>
+    <h1>CodingGita Feedback Form</h1>
+    <p>We value your feedback. Please fill out this form to help us improve.</p>
+    <hr>
+
+    <form method="post" action="#">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+        </fieldset><br><br>
+
+        <fieldset>
+            <legend>Feedback</legend>
+
+            <label for="course">Which course/workshop are you giving feedback for?</label><br>
+            <select id="course" name="course">
+                <option value="mern">MERN Stack Course</option>
+                <option value="dsa">DSA Bootcamp</option>
+                <option value="web">Web Development Workshop</option>
+            </select>
+            <br><br>
+            <label>Rate Your Experience</label>
+
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1">1 Star</label>
+
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">2 Stars</label>
+
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">3 Stars</label>
+
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">4 Stars</label>
+
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">5 Stars</label>
+        <br><br>
+            <label>What aspects are you giving feedback on?</label>
+            <br>
+            <input type="checkbox" id="content" name="feedback" value="Content Quality">
+            <label for="content">Content Quality</label><br>
+
+            <input type="checkbox" id="teaching" name="feedback" value="Teaching Method">
+            <label for="teaching">Teaching Method</label><br>
+
+            <input type="checkbox" id="support" name="feedback" value="Support & Guidance">
+            <label for="support">Support & Guidance</label><br>
+
+            <input type="checkbox" id="overall" name="feedback" value="Overall Experience">
+            <label for="overall">Overall Experience</label><br>
+        <br><br>
+
+            <label>Additional Suggestions</label>
+            <label for="suggestions">Your Suggestions:</label><br>
+            <textarea id="suggestions" name="suggestions" rows="4" cols="40"></textarea>
+        <br><br>
+            <label>Satisfaction Level</label>
+            <label for="satisfaction">How satisfied are you? (1–10 scale)</label><br>
+            <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" oninput="output.value=this.value">
+            <output id="output"></output>
+        <br><br>
+        <fieldset>
+            <legend>Would You Recommend Us?</legend>
+
+            <input type="radio" id="yes" name="recommend" value="Yes">
+            <label for="yes">Yes</label>
+
+            <input type="radio" id="no" name="recommend" value="No">
+            <label for="no">No</label>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Feedback Date</legend>
+            <label for="date">Date of Feedback:</label>
+            <input type="date" id="date" name="date">
+        </fieldset>
+        <br>
+
+    </form>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</body>
+</html>

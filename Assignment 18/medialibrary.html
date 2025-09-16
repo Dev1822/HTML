@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Media Library</title>
+</head>
+<body>
+    <hr>
+    <h1 id="top">Media Library Collection</h1>
+    <p>This page contains my favorite images, songs, videos, and online embeds.</p>
+    <hr>
+    <br>
+    <p>
+        <a href="#images">Images</a> |
+        <a href="#audio">Audio</a> |
+        <a href="#video">Video</a> |
+        <a href="#embeds">Embeds</a>
+    </p>
+    <hr>
+    <section id="images">
+        <h2>Images</h2>
+        <figure>
+            <img src="https://res.cloudinary.com/dre3wdpfu/image/upload/v1757997894/taj_mahal_uktnnj.jpg" alt="Taj Mahal" title="Taj Mahal at Sunrise" width="300">
+            <figcaption>Taj Mahal at sunrise.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://res.cloudinary.com/dre3wdpfu/image/upload/v1757997936/himalayas_t4poll.jpg" alt="Himalayas" title="Beautiful mountains." width="300">
+            <figcaption>Beautiful mountains.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://res.cloudinary.com/dre3wdpfu/image/upload/v1757997958/beach_byat76.jpg" alt="Beach" title="Golden sunset at the beach." width="300">
+            <figcaption>Golden sunset at the beach.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://res.cloudinary.com/dre3wdpfu/image/upload/v1757997979/forest_u4uayn.jpg" alt="Forest" title="Green Forest" width="300">
+            <figcaption>Green forest.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://res.cloudinary.com/dre3wdpfu/image/upload/v1757997998/city_qts09w.jpg" alt="City Skyline" title="City Lights" width="300">
+            <figcaption>City skyline at night.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://res.cloudinary.com/dre3wdpfu/image/upload/v1757998019/desert_vym8bu.jpg" alt="Desert" title="Desert Dunes" width="300">
+            <figcaption>Sand dunes in the desert.</figcaption>
+        </figure>
+    </section>
+
+    <hr>
+
+    <section id="audio">
+        <h2>Audio Collection</h2>
+
+        <p>Song 1: Relaxing music (autoplay)</p>
+        <audio controls autoplay>
+            <source src="https://res.cloudinary.com/dre3wdpfu/video/upload/v1757997758/audio_gu1yhx.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+
+        <p>Song 2: Instrumental track (loop)</p>
+        <audio controls loop>
+            <source src="https://res.cloudinary.com/dre3wdpfu/video/upload/v1757997808/audio2_deyqpt.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+
+        <p>Song 3: Classical melody</p>
+        <audio controls>
+            <source src="https://res.cloudinary.com/dre3wdpfu/video/upload/v1757997863/audio3_mbxtjc.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+    </section>
+    <hr>
+
+    <section id="video">
+        <h2>Video Collection</h2>
+        <figure>
+            <video controls width="480" height="270" poster="media/images/desert.jpeg">
+                <source src="https://res.cloudinary.com/dre3wdpfu/video/upload/v1757998116/video_pzgexb.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+            <figcaption>My coding session demo.</figcaption>
+        </figure>
+
+        <figure>
+            <video controls width="480" height="270" poster="media/images/city.jpeg">
+                <source src="https://res.cloudinary.com/dre3wdpfu/video/upload/v1757998199/video2_onlil8.mp4" type="video/mp4">
+                <track src="subtitles/subtitles.vtt" kind="subtitles" srclang="en" label="English">
+                Your browser does not support video.
+            </video>
+            <figcaption>Explainer with subtitles.</figcaption>
+        </figure>
+    </section>
+    <hr>
+
+    <section id="embeds">
+        <h2>External Media Embeds</h2>
+
+        <h3>YouTube Video</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HD13eq_Pmp8?si=yY_Kr2gfLSjUtyR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <h3>Google Map (CodingGita Campus)</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.503308295735!2d72.5053928747761!3d23.224765108753587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c3f9120099141%3A0xa2ea509a8429c97d!2sSwaminarayan%20University!5e0!3m2!1sen!2sin!4v1757437468557!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <h3>Wikipedia Article</h3>
+        <iframe src="https://en.wikipedia.org/wiki/Computer" width="600" height="400"></iframe>
+    </section>
+    <hr>
+
+    <p><a href="#top">Back to Top</a></p>
+</body>
+</html>

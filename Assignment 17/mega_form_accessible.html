@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone</title>
+</head>
+<body>
+    <hr>
+    <h1>CodingGita University – Admission + Internet Survey Form</h1>
+    <p>Please fill out this application form completely. Your admission will be considered along with the internet usage survey for research purposes.</p>
+    <hr>
+    <br>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Full Name: </label>
+            <input id="name" name="name" type="text" required placeholder="Enter your full name"><br><br>
+            <label for="father">Father's Name: </label>
+            <input id="father" name="father" type="text" required placeholder="Enter your Father's name"><br><br>
+            <label for="mother">Mother's Name: </label>
+            <input id="mother" name="mother" type="text" required placeholder="Enter your Mother's name"><br><br>
+            <label for="email">Email: </label>
+            <input id="email" name="email" type="text" required placeholder="Email address"><br><br>
+            <label for="phone">Phone: </label>
+            <input type="number" id="phone" name="phone" min="6000000000" max="9999999999" placeholder="10-digit phone number">
+            <label for="dob">Dob: </label>
+            <input id="dob" name="dob" type="date" required><br><br>
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br><br>
+            </fieldset>
+            <label for="nationality">Nationality:</label>
+            <select id="nationality" name="nationality">
+                <option value="Indian">Indian</option>
+                <option value="NRI">NRI</option>
+                <option value="Other">Other</option>
+            </select><br><br>
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" name="photo" multiple accept=".jpg,.png">
+        </fieldset>
+
+        <fieldset>
+            <legend>Academic Details</legend>
+            <label for="qualification">Highest Qualification:</label>
+            <select id="qualification" name="qualification">
+                <option>School</option>
+                <option>Diploma</option>
+                <option>Bachelor's</option>
+                <option>Master's</option>
+                <option>PhD</option>
+            </select><br><br>
+            <label for="stream">Stream:</label>
+            <select id="stream" name="stream">
+                <option>Science</option>
+                <option>Commerce</option>
+                <option>Arts</option>
+                <option>Other</option>
+            </select><br><br>
+            <label for="per">Percentage/CGPA: </label>
+            <input id="per" name="per" type="number" required><br><br>
+            <label for="pass">Year of Passing:</label>
+            <input type="number" id="pass" name="pass" required><br><br>
+            <fieldset>
+                <legend>Subjects Studied:</legend>
+                <input type="checkbox" id="physics" name="subjects" value="Physics">
+                <label for="physics">Physics</label>
+                <input type="checkbox" id="chemistry" name="subjects" value="Chemistry">
+                <label for="chemistry">Chemistry</label>
+                <input type="checkbox" id="math" name="subjects" value="Math">
+                <label for="math">Math</label>
+                <input type="checkbox" id="biology" name="subjects" value="Biology">
+                <label for="biology">Biology</label>
+                <input type="checkbox" id="cs" name="subjects" value="CS">
+                <label for="cs">CS</label>
+                <input type="checkbox" id="english" name="subjects" value="English">
+                <label for="english">English</label>
+                <input type="checkbox" id="otherSub" name="subjects" value="Other">
+                <label for="otherSub">Others</label>
+            </fieldset><br>
+            <label for="certificates">Upload certificates:</label>
+            <input type="file" id="certificates" name="certificates" multiple>
+            <label for="course">Preffered Course:</label>
+            <select id="course" name="course">
+                <option>MERN Stack</option>
+                <option>DSA Bootcamp</option>
+                <option>AI/ML</option>
+                <option>Web Development</option>
+                <option>Cloud Computing</option>
+            </select><br><br>
+            <fieldset>
+                <legend>Admission Category</legend>
+                <input type="radio" id="general" name="category" value="general">
+                <label for="general">General</label>
+                <input type="radio" id="sc" name="category" value="sc">
+                <label for="sc">SC</label>
+                <input type="radio" id="st" name="category" value="st">
+                <label for="st">ST</label>
+                <input type="radio" id="obc" name="category" value="obc">
+                <label for="obc">OBC</label>
+                <input type="radio" id="ews" name="gender" value="ews">
+                <label for="ews">EWS</label><br><br>
+            </fieldset>
+        </fieldset>
+
+        <fieldset>
+            <legend>Internet Usage & Skills</legend>
+            <label>Internet Access?</label>
+            <input type="radio" id="yes" name="access" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="access" value="no">
+            <label for="no">No</label>
+            <br><br>
+            <label>Devices Used:</label>
+            <input type="checkbox" id="laptop" name="device" value="laptop">
+            <label for="laptop">Laptop</label>
+            <input type="checkbox" id="mobile" name="device" value="mobile">
+            <label for="mobile">Mobile</label>
+            <input type="checkbox" id="tablet" name="device" value="tablet">
+            <label for="tablet">Tablet</label>
+            <input type="checkbox" id="desktop" name="device" value="desktop">
+            <label for="desktop">Desktop</label><br><br>
+            <label for="usage">Average Daily Usage:</label>
+            <select id="usage" name="usage">
+                <option>&lt;1 hour</option>
+                <option>1–3 hours</option>
+                <option>3–6 hours</option>
+                <option>6+ hours</option>
+            </select><br><br>
+            <label for="studytime">Preferred Study Time:</label>
+            <input type="time" id="studytime" name="studytime"><br><br>
+
+            <label for="data">Drag to select GB usage</label>
+            <input type="range" id="data" name="data" min="1" max="100" oninput="output.value=this.value">
+            <output id="output"></output><br><br>
+
+            <label for="platform">Favorite Social Platform:</label>
+            <input type="text" id="platform" name="platform" list="platforms" placeholder="Type or choose">
+            <datalist id="platforms">
+                <option>YouTube</option>
+                <option>Instagram</option>
+                <option>LinkedIn</option>
+                <option>Discord</option>
+                <option>GitHub</option>
+                <option>Twitter</option>
+            </datalist><br><br>
+
+            <label>Skills</label>
+            <input type="checkbox" id="html" name="skills" value="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="skills" value="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="react" name="skills" value="react">
+            <label for="react">React</label>
+            <input type="checkbox" id="nodejs" name="skills" value="nodejs">
+            <label for="nodejs">Node.js</label>
+            <input type="checkbox" id="mongodb" name="skills" value="mongodb">
+            <label for="mongodb">MongoDB</label>
+            <input type="checkbox" id="git" name="skills" value="git">
+            <label for="git">Git</label><br><br>
+
+            <label for="screenshot">Upload Speed Test Screenshot:</label>
+            <input type="file" id="screenshot" name="screenshot"><br><br>
+
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" name="color"><br><br>
+
+            <label for="satisfy">Internet Satisfaction:</label>
+            <input type="range" id="satisfy" name="satisfy" min="1" max="10" oninput="output2.value=this.value">
+            <output id="output2"></output><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Declaration</legend>
+            <label for="cg">Why do you want to join CodingGita?</label><br>
+            <textarea id="cg" required rows="10" cols="80"></textarea><br><br>
+
+            <label for="help">How has the Internet helped your education?</label><br>
+            <textarea id="help" rows="10" cols="80"></textarea><br><br>
+
+            <legend>Would you recommend CodingGita to friends?</legend>
+            <input type="radio" id="yesRec" name="recommend" value="Yes">
+            <label for="yesRec">Yes</label>
+            <input type="radio" id="noRec" name="recommend" value="No">
+            <label for="noRec">No</label><br><br>
+
+            <input type="checkbox" id="declaration" name="declaration" required>
+            <label for="declaration">I hereby declare that the information provided above is true to the best of my knowledge.</label><br><br>
+
+            <label for="sign">Upload Signature (JPG/PNG):</label>
+            <input type="file" id="sign" name="sign" accept=".jpg,.png"><br><br>
+
+            <label for="submission">Date of Submission:</label>
+            <input type="date" id="submission" name="submission"><br><br>
+
+        </fieldset>
+        <input type="submit" value="Submit Application">
+        <input type="reset" value="Clear Form" >
+    </form>
+</body>
+</html>
